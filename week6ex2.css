@@ -1,0 +1,47 @@
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20%;
+    justify-items: center;
+    background-color: cornflowerblue;
+}
+
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    background-color: lightblue;
+}
+
+.main-container-h2 {
+    display: grid;
+    grid-area: 1/4/1/1;
+    justify-items: center;
+    align-items: center;
+}
+
+.more-1,
+.more-2,
+.more-3 {
+    display: grid;
+    margin: 10px;
+    background-color: peachpuff;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.aside-container {
+    display: grid;
+    grid-area: 4/4/1/4;
+    justify-items: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.footer-container {
+    display: grid;
+    background-color: lightsteelblue;
+}
