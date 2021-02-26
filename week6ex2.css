@@ -10,15 +10,16 @@
 .main-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-color: lightblue;
 
 }
 
 .main-container-h2 {
     display: grid;
+    grid-column: 1 / span 2;
     justify-items: center;
     align-items: center;
-    height: 15em;
 }
 
 
@@ -32,12 +33,21 @@
     align-items: center;
 }
 
-
+.more-3 {
+    display: flex;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    justify-self: stretch;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
 .aside-container {
     display: grid;
+    grid-column: 3;
+    grid-row: 1 / span 3;
     justify-items: center;
     align-items: center;
     background-color: lightgray;
